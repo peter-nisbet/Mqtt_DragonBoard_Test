@@ -1,7 +1,6 @@
 # !/bin/sh
 # Launcher.sh
-
-
-cd /home/linaro
-sudo python mqtttest.python &
+sudo date +%Y%m%d -s "20180721"
+sudo mosquitto -c /etc/mosquitto/conf.d/mosquitto.conf &
+sudo python /home/linaro/mqtttest.py &
 
